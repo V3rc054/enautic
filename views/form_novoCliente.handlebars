@@ -1,0 +1,116 @@
+<!--BREADCRUMB-->
+<div id="container_breadcrumb">
+    <div id="breadcrumb">
+        <div class="col s12">
+            <a href="/" class="breadcrumb">Principal</a>
+            <a href="#" class="breadcrumb">Novo cliente</a>
+        </div>
+    </div>
+</div>
+
+<!--CONTAINER FORM-->
+<form class="container center" id="container-master" action="/form_novoCliente" method="post">
+
+    <!--LOGO-->
+    <div class="container center" id="logo_forms">
+        <h5 class="left"><i><b id="name_form">NOVO CLIENTE <i class="material-icons left small">person</i></b></i>
+    </div>
+
+    <!--BUTTONS-->
+    <div class="card lg " id="buttons">
+        <button class="btn-medium  waves-effect waves-light btn" style="width: 140px;" type="submit"><i
+                class="material-icons left" id="save">save</i>Salvar</button>
+        <a class="btn- center waves-effect waves-light btn"><i class="material-icons left">local_printshop</i>
+            Imprimir</a>
+
+    </div>
+    <!--FORM-->
+    <div id="container" class="container center card section">
+        <div class="row">
+            <div class="col">
+                <div id="container_02" class="row">
+
+                    <div class="input-field col s5">
+                        <input autofocus type="text" name="nome">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="datenascimento" type="date" class="validate" required="">
+                        <label for="datenascimento">Nascimento:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="nacionalidade" type="text">
+                        <label for="nacionalidade">Nacionalidade:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="naturalidade" type="text">
+                        <label for="naturalidade">Naturalidade:</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input name="uf_nascimento" type="text">
+                        <label for="uf_nascimento">UF</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o CEP" id="cep" type="text" name="cep">
+                        <label for="cep">CEP:</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Endereço" name="endereco" id="logradouro" type="text">
+                        <label for="endereco">Endereco:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o numero" name="numero" type="text">
+                        <label for="numero">Numero</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Casa/Apt" name="complemento" type="text">
+                        <label for="complemento">Complemento</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite o bairro" name="bairro" id="bairro" type="text">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite a cidade" name="cidade" id="localidade" type="text">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input placeholder="UF" name="uf_endereco" id="uf" type="text">
+                        <label for="uf_endereco">UF</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="RG/CNH" name="rgcnh" type="text">
+                        <label for="rgcnh">Identidade</label>
+                    </div>
+
+                    <div class="input-field col s1.">
+                        <input placeholder="Ex: SSP" name="o_emissor" type="text">
+                        <label for="o_emissor">Orgao Emissor</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Data de emissao" name="dateemissao" type="date" class="validate"
+                            required="">
+                        <label for="dateemissao">Data de Emissao</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="CPF/CNPJ" name="cpfcnpj" type="text">
+                        <label for="cpfcnpj">CPF/CNPJ</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="tel" type="text">
+                        <label for="tel">TELEFONE</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="cel" type="text">
+                        <label for="cel">CELULAR</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Digite o email" name="email" type="text">
+                        <label for="email">Email:</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</form>
+

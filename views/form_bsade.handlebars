@@ -1,0 +1,243 @@
+<!--BREADCRUMB-->
+<div id="container_breadcrumb">
+    <div id="breadcrumb">
+        <div class="col s12">
+            <a href="/" class="breadcrumb">Principal</a>
+            <a href="#" class="breadcrumb">Bsade</a>
+        </div>
+    </div>
+</div>
+
+<!--CONTAINER FORM-->
+<form class="container center" id="container-master" action="" method="POST">
+
+    <!--LOGO-->
+    <div class="container center" id="logo_forms">
+        <h5 class="left"><i><b id="name_form">BSADE <i class="material-icons left small">assignment</i></b></i>
+    </div>
+
+    <!--BUTTONS-->
+    <div class="card lg " id="buttons">
+        <a class="btn-medium  waves-effect waves-light btn" type="submit" href="#"><i
+                class="material-icons left">save</i>Salvar</a>
+        <a class="btn- center waves-effect waves-light btn"><i class="material-icons left">edit</i> Alterar</a>
+        <a class="btn- center waves-effect waves-light btn"><i class="material-icons left">local_printshop</i>
+            Imprimir</a>
+    </div>
+
+   
+    <!--FORM-->
+    <div id="container" class="container center card section">
+        <div class="row">
+            <form class="col">
+                <div id="container_02" class="row">
+                    <div class="input-field col s5">
+                        <input autofocus type="text" name="nome" class="validate" required="" aria-required="false">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o CEP" type="text" name="cep" id="cep" class="validate" required=""
+                            aria-required="true">
+                        <label for="cep">CEP:</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Digite o endereço" name="endereco" type="text" class="validate" required=""
+                            aria-required="true" id="logradouro">
+                        <label for="endereco">Endereco:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o numero" name="numero" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="numero">Numero</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Casa/Apt" name="complemento" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="complemento">Complemento</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite o bairro" name="bairro" type="text" class="validate" required=""
+                            aria-required="true" id="bairro">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite a cidade" name="cidade" type="text" class="validate" required=""
+                            aria-required="true" id="localidade">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input placeholder="Ex: SP" name="uf" type="text" class="validate" required=""
+                            aria-required="true" id="uf">
+                        <label for="uf">UF</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="RG/CNH" name="rg-cnh" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="rg-cnh">Identidade</label>
+                    </div>
+
+                    <div class="input-field col s1.">
+                        <input placeholder="Ex: SSP" name="o_emissor" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="o_emissor">Orgao Emissor</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Data de emissao" name="dateEmissao" type="date" class="validate" required=""
+                            aria-required="true">
+                        <label for="dateEmissao">Data de Emissao</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="CPF/CNPJ" name="cpf-cnpj" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="cpf-cnpj">CPF/CNPJ</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="tel" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="tel">TELEFONE</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="cel" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="cel">CELULAR</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Digite o email" name="email" type="text" class="validate" required=""
+                            aria-required="true">
+                        <label for="email">Email:</label>
+                    </div>
+                </div>
+
+                <!-- FORM BSADE-->
+                <div class="row" id="form_bsade">
+                    <div class="card">
+                        <select class="browser-default col s3" name="natRequerimento">
+                            <option value="">NATUREZA DO REQUERIMENTO</option>
+                            <option value="1">Incrição de embarcação</option>
+                            <option value="2">Cancelamento de Inscrição</option>
+                            <option value="3">Transferência de proprietário</option>
+                            <option value="4">Transferência de jurisdição</option>
+                            <option value="5">Atualização de dados</option>
+                            <option value="6">Emissão de certidão</option>
+                        </select>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Numeracao" name="nf" type="text">
+                        <label for="nf">Nota Fiscal</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Data da venda" name="dateVenda" type="date">
+                        <label for="dateVenda">Data da venda</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Localidade" name="localVenda" type="text">
+                        <label for="localVenda">LOCAL</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Nome do vendedor" name="vendedor" type="text">
+                        <label for="vendedor">Vendedor</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="CPF/CNPJ" name="cpf-cnpjVendedor" type="text">
+                        <label for="cpf-cnpjVendedor">CPF/CNPJ</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Digite o nome da embarcacao" name="nomeEmbarcacao" type="text">
+                        <label for="nomeEmbarcacao">Nome da embarcacao</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Digite a inscricao" name="inscricao" type="text">
+                        <label for="inscricao">Inscricao</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input name="arqBruta" type="text">
+                        <label for="arqBruta">Arq. Bruta:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="tipo" type="text">
+                        <label for="tipo">Tipo:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="atividade" type="text">
+                        <label for="atividade">Atividade:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="arqLiquida" type="text">
+                        <label for="arqLiquida">Arq. Liquida</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="comprimento" type="text">
+                        <label for="comprimento">Comprimento:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="tripulantes" type="text">
+                        <label for="tripulantes">Tripulantes:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="anoConstrucao" type="text">
+                        <label for="anoConstrucao">Ano de Construcao:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="boca" type="text">
+                        <label for="boca">Boca:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="passageiro" type="text">
+                        <label for="passageiro">Passageiro:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="numCasco" type="text">
+                        <label for="numCasco">Numero do Casco:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="pontal" type="text">
+                        <label for="pontal">Pontal:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="matCasco" type="text">
+                        <label for="matCasco">Material do Casco:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="contorno" type="text">
+                        <label for="contorno">Contorno:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="1motorMarca" type="text">
+                        <label for="1motorMarca">1º Motor/Marca:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="1potencia" type="text">
+                        <label for="1potencia">Potência:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="1numSerie" type="text">
+                        <label for="1numSerie">Numero de Série:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input id="2motorMarca" type="text">
+                        <label for="2motorMarca">2º Motor/Marca:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="2potencia" type="text">
+                        <label for="2potencia">Potência:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="2numSerie" type="text">
+                        <label for="2numSerie">Numero de Série:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="3motorMarca" type="text">
+                        <label for="3motorMarca">3º Motor/Marca:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="3potencia" type="text">
+                        <label for="3potencia">Potência:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input marca="3numSerie" type="text">
+                        <label for="3numSerie">Numero de Série:</label>
+                    </div>
+                </div>
+        </div>
+    </div>
+</form>

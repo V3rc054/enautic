@@ -1,0 +1,103 @@
+<!--CONTAINER FORM-->
+<form class="container center" id="container-master" action="/form_deleteCliente/{{model.cliente_id}}" method="post">
+
+    <!--BUTTONS-->
+    <div class="card lg " id="buttons">
+        <button class="btn-medium  waves-effect waves-light btn" style="width: 140px;" type="submit"><i
+                class="material-icons left">save</i>Deletar</button>
+        <a class="btn-medium  waves-effect waves-light btn" href="/clientes" style="width: 140px;"><i
+                class="material-icons left">save</i>Cancelar</a>
+    </div>
+
+    <!--FORM-->
+    <div id="container" class="container center card section">
+        <div class="row">
+            <div class="col">
+                <div id="container_02" class="row">
+
+                    <div class="input-field col s5">
+                        <input type="text" name="nome" value="{{model.nome}}">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="datenascimento" type="date" value="{{model.datenascimento}}">
+                        <label for="datenascimento">Nascimento:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="nacionalidade" type="text" value="{{model.nacionalidade}}">
+                        <label for="nacionalidade">Nacionalidade:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input name="naturalidade" type="text" value="{{model.naturalidade}}">
+                        <label for="naturalidade">Naturalidade:</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input name="uf_nascimento" type="text" value="{{model.uf_nascimento}}">
+                        <label for="uf_nascimento">UF</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o CEP" id="cep" type="text" name="cep" value="{{model.cep}}">
+                        <label for="cep">CEP:</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Endereço" name="endereco" id="logradouro" type="text"
+                            value="{{model.endereco}}">
+                        <label for="endereco">Endereco:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o numero" name="numero" type="text" value="{{model.numero}}">
+                        <label for="numero">Numero</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Casa/Apt" name="complemento" type="text" value="{{model.complemento}}">
+                        <label for="complemento">Complemento</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite o bairro" name="bairro" id="bairro" type="text"
+                            value="{{model.bairro}}">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite a cidade" name="cidade" id="localidade" type="text"
+                            value="{{model.cidade}}">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input placeholder="UF" name="uf_endereco" id="uf" type="text" value="{{model.uf_endereco}}">
+                        <label for="uf_endereco">UF</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="RG/CNH" name="rgcnh" type="text" value="{{model.rgcnh}}">
+                        <label for="rgcnh">Identidade</label>
+                    </div>
+
+                    <div class="input-field col s1.">
+                        <input placeholder="Ex: SSP" name="o_emissor" type="text" value="{{model.o_emissor}}">
+                        <label for="o_emissor">Orgao Emissor</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Data de emissao" name="dateemissao" type="date"
+                            value="{{model.dateemissao}}">
+                        <label for="dateemissao">Data de Emissao</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="CPF/CNPJ" name="cpfcnpj" type="text" value="{{model.cpfcnpj}}">
+                        <label for="cpfcnpj">CPF/CNPJ</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="tel" type="text" value="{{model.tel}}">
+                        <label for="tel">TELEFONE</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="cel" type="text" value="{{model.cel}}">
+                        <label for="cel">CELULAR</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Digite o email" name="email" type="text" value="{{model.email}}">
+                        <label for="email">Email:</label>
+                    </div>
+
+
+                </div>
+            </div>
+</form>

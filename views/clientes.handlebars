@@ -1,0 +1,64 @@
+<!---BREADCRUMB-->
+<div id="container_breadcrumb">
+  <div id="breadcrumb">
+    <div class="col s12">
+      <a href="/" class="breadcrumb">Principal</a>
+      <a href="#" class="breadcrumb">Tabela de clientes</a>
+    </div>
+  </div>
+</div>
+
+<!--INPUT SEARCH-->
+<div class="container">
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">search</i>
+      <input id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">PESQUISAR CLIENTE</label>
+    </div>
+    <div class="left" style="margin-left: -140px; color:rgb(12, 141, 120)">
+      <div><a href="/form_novoCliente" class="btn-floating btn-medium waves-effect waves-light red"><i
+            class="material-icons">add</i></a> NOVO CLIENTE</div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+</script>
+
+<!--TABLE-->
+<form action="/clientes/{{model.cliente_id}}" method="POST">
+  <table id="myTable" class="responsive-table striped highlight">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Celular</th>
+        <th>Telefone</th>
+        <th>Categoria</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      {{#each model}}
+      <tr>
+        <td>{{this.nome}}</td>
+        <td>{{this.cpfcnpj}}</td>
+        <td>{{this.cel}}</td>
+        <td>{{this.tel}}</td>
+        <td>{{this.datenascimento}}</td>
+        <td><i id="ico-view" class="material-icons">find_in_page</i></td>
+        <td><a href="/form_editCliente/{{this.cliente_id}}" type="submit"><i id="ico-del"
+              class="material-icons left">edit</i></a></td>
+        <td><a href="/form_deleteCliente/{{this.cliente_id}}" type="submit"><i id="ico-del"
+              class="material-icons left">delete</i></a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</form>

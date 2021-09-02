@@ -1,0 +1,127 @@
+<!--BREADCRUMB-->
+<div id="container_breadcrumb">
+    <div id="breadcrumb">
+        <div class="col s12">
+            <a href="/" class="breadcrumb">Principal</a>
+            <a href="#" class="breadcrumb">Extravio de CHA</a>
+        </div>
+    </div>
+</div>
+
+<!--CONTAINER-->
+<form class="container center" id="container-master" action="" method="POST">
+
+    <!--LOGO-->
+    <div class="container center" id="logo_forms">
+        <h5 class="left"><i><b id="name_form">Extravio de CHA <i class="material-icons left small">assignment</i>
+                </b></i>
+    </div>
+
+    <!--BUTTONS-->
+    <div class="card lg " id="buttons">
+        <a class="btn-medium  waves-effect waves-light btn" type="submit" href="#"><i
+                class="material-icons left">save</i>Salvar</a>
+        <a class="btn- center waves-effect waves-light btn"><i class="material-icons left">edit</i> Alterar</a>
+        <a class="btn- center waves-effect waves-light btn"><i class="material-icons left">local_printshop</i>
+            Imprimir</a>
+        <a class="btn- center waves-effect waves-light btn"><i class="material-icons left">add_box</i>Importar</a>
+    </div>
+
+    <!--FORM-->
+    <div id="container" class="container center card section">
+        <div class="row">
+            <form class="col">
+                <div id="container_02" class="row">
+                    <div class="input-field col s5">
+                        <input name="nome" type="text">
+                        <label for="nome">Nome:</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o CEP" name="cep" type="text" id="cep">
+                        <label for="cep">CEP:</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Digite o endereço" name="endereco" type="text" id="logradouro">
+                        <label for="endereco">Endereco:</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Digite o numero" name="numero" type="text">
+                        <label for="numero">Numero</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Casa/Apt" name="complemento" type="text">
+                        <label for="complemento">Complemento</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite o bairro"  name="bairro" type="text" id="bairro">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Digite a cidade" name="cidade" type="text" id="localidade">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <input placeholder="Ex: SP" name="uf" type="text" id="uf">
+                        <label for="uf">UF</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="RG/CNH" name="rg-cnh" type="text">
+                        <label for="rg-cnh">Identidade</label>
+                    </div>
+
+                    <div class="input-field col s1.">
+                        <input placeholder="Ex: SSP" name="o_emissor" type="text">
+                        <label for="o_emissor">Orgao Emissor</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Data de emissao" name="dateEmissao" type="date">
+                        <label for="dateEmissao">Data de Emissao</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="CPF/CNPJ" name="cpf-cnpj" type="text">
+                        <label for="cpf-cnpj">CPF/CNPJ</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="tel" type="text">
+                        <label for="tel">TELEFONE</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="(000) 0000-0000" name="cel" type="text">
+                        <label for="cel">CELULAR</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Digite o email" email="email" type="text">
+                        <label for="email">Email:</label>
+                    </div>
+                </div>
+
+                <!--FORM EXTRAVIO DE CHA-->
+                <div>
+                    <div class="card" id="form_extravio_cha">
+                        <div class="input-field col s5">
+                            <input Placeholder="Digite o numero da CHA" name="CHA" type="text">
+                            <label for="CHA">CARTEIRA DE HABILITAÇÃO DE AMADOR (CHA) </label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input Placeholder="Digite o numero da CHA" name="dateEmissao" type="date">
+                            <label for="dateEmissao">Data da Emissão</label>
+                        </div>
+                        <div class="input-field col s5">
+                            <input Placeholder="Digite a categoria da CHA" name="categoria" type="text">
+                            <label for="categoria">Categoria</label>
+                        </div>
+                        <div class="card">
+                            <select class="browser-default col s6 ">
+                                <option value="">MOTIVO DA DECLARAÇÃO</option>
+                                <option value="1">EXTRAVIADA</option>
+                                <option value="2">ROUBADA </option>
+                                <option value="3">FURTADA</option>
+                                <option value="3">DANIFICADA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</form>

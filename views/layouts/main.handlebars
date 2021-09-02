@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/100/000000/right2.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/tableClientes/table.css">
+    <link href="/css/material-icon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--DROPDONW MENU -->
+    <div>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="/form_bsade" class="collection-item" id="btn_bsade">Form. BSADE</a></li>
+            <li><a href="/form_declaracaoRes" class="collection-item" id="btn_residencia">Form. Residência</a></li>
+            <li><a href="/form_extravioNorman03" class="collection-item" id="btn_extravio_norman03">Form. Extravio -
+                    norman 03</a></li>
+            <li><a href="/form_extravioCHA" class="collection-item" id="btn_extravio_cha">Form. Extravio CHA</a></li>
+            <li><a href="/form_reqArmador" class="collection-item" id="btn_req_armador">Req. Armador</a></li>
+            <li><a href="/form_procuracao" class="collection-item" id="btn_procuracao">Procuração</a></li>
+        </ul>
+
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="/form_novoCliente" class="collection-item">Novo cliente</a></li>
+            <li><a href="/clientes" class="collection-item">Tabela de clientes</a></li>
+        </ul>
+    </div>
+
+    <!--NAVBAR -->
+    <div>
+        <nav class="nav">
+            <div>
+                <a href="#!" class="brand-logo center"><i class="material-icons lg">blur_on</i><i
+                        class="user_name "><b>e</b>-nautic</i></a>
+                <a href="#!" class="brand-logo right"><i class="material-icons">linear_scale</i><i
+                        class="">usuário</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">CADASTRO DE CLIENTES</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">DOCUMENTOS E FORMULÁRIOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    {{{body}}}
+
+
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/materializeJS.js"></script>
+    <script src="/js/cep.js"></script>
+    <script src="/js/elements.js"></script> 
+    <script src="/util.js"></script>
+    <script src="/js/table.js"></script>
+
+
+</body>
+
+</html>
