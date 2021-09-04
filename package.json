@@ -20,6 +20,7 @@
     "pg": "^8.7.1",
     "require-stack": "^1.0.2",
     "sequelize": "^6.6.5",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "tabulator-tables": "^4.9.3"
   }
 }
