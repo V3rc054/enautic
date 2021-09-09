@@ -4,7 +4,7 @@ body
 }
 
 #container-master
-{   background-image: url("..//img/pexels-photo-4040649.jpeg");
+{   background-color: rgb(21, 114, 119);
     border-style: solid;
     border-color: rgb(239, 239, 241);
     border-radius: 20px;
@@ -116,7 +116,7 @@ h5
 
 #name_form
 {
-    color: rgb(12, 143, 143);
+    color: rgb(255, 255, 255);
 }
 
 
