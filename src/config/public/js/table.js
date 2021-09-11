@@ -1,3 +1,4 @@
+
 //FILTER TABLE NAMES
 
 const filter = () => {
@@ -27,4 +28,6 @@ const filter = () => {
   addEventListener('keyup', (displayFilter))
 
 }
+
+module.exports = filter
 

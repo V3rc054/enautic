@@ -1,5 +1,5 @@
 
-const postal = () => {
+ const postal = () => {
 
     const cep = document.querySelector("#cep")
 
@@ -30,4 +30,4 @@ const postal = () => {
 
 }
 
-module.exports = postal
+export default postal
